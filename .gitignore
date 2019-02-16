@@ -1,0 +1,14 @@
+**/build/
+**/HOWTO_COMMIT
+**/target/
+**/out/
+**/bin/
+
+# class files
+*.class
+
+#Power Point
+**.ppt
+**.pptx
+
+
