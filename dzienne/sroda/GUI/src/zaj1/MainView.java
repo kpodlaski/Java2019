@@ -32,6 +32,13 @@ public class MainView {
                 fillJEditorPane();
             }
         });
+        maxButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(panel1,
+                        "Maksymalna wpłata:");
+            }
+        });
     }
 
     private void fillJEditorPane() {
