@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9209905-635f-4ef4-869f-cf8c595049ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj2/WindowAppForm.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj2/WindowAppForm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj2/MafiaForm.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj2/MafiaForm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj2/Wplata.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,20 +21,42 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WindowAppForm.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zaj2/WindowAppForm.java">
+      <file leaf-file-name="MafiaForm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zaj2/MafiaForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="228">
+              <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#598#606#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WindowAppForm.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zaj2/WindowAppForm.form">
+      <file leaf-file-name="Wplata.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zaj2/Wplata.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="49" />
+              <folding>
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MafiaForm.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zaj2/MafiaForm.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
@@ -69,6 +91,9 @@
         <option value="$PROJECT_DIR$/src/zaj1/ComputerElement.java" />
         <option value="$PROJECT_DIR$/src/zaj2/WindowAppForm.java" />
         <option value="$PROJECT_DIR$/src/zaj2/WindowAppForm.form" />
+        <option value="$PROJECT_DIR$/src/zaj2/Wplata.java" />
+        <option value="$PROJECT_DIR$/src/zaj2/MafiaForm.java" />
+        <option value="$PROJECT_DIR$/src/zaj2/MafiaForm.form" />
       </list>
     </option>
   </component>
@@ -131,8 +156,26 @@
               <option name="myItemId" value="zaj2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WindowAppForm" />
+              <option name="myItemId" value="semestr6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="semestr6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zaj2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MafiaForm" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -166,7 +209,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
-  <component name="RunManager" selected="Application.WindowAppForm">
+  <component name="RunManager" selected="Application.MafiaForm">
     <configuration default="false" name="ComputerElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -195,6 +238,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="zaj2.WindowAppForm" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="semestr6" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MafiaForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="zaj2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="zaj2.MafiaForm" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -587,14 +650,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.ComputerElement" />
       <item index="1" class="java.lang.String" itemvalue="Application.WindowAppForm" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MafiaForm" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.WindowAppForm" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ComputerElement" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.MafiaForm" />
+        <item index="1" class="java.lang.String" itemvalue="Application.WindowAppForm" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ComputerElement" />
       </list>
     </recent_temporary>
   </component>
@@ -611,12 +676,20 @@
       <workItem from="1550311917766" duration="5081000" />
       <workItem from="1550319089297" duration="14000" />
       <workItem from="1550915676053" duration="2194000" />
-      <workItem from="1550917908854" duration="23000" />
+      <workItem from="1550917908854" duration="3315000" />
     </task>
+    <task id="LOCAL-00001" summary="intro to GUI in swing">
+      <created>1550917953547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550917953547</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7312000" />
+    <option name="totallyTimeSpent" value="10604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="0" width="1500" height="1008" extended-state="0" />
@@ -625,12 +698,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4924154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12835473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -649,7 +723,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -659,6 +732,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="intro to GUI in swing" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro to GUI in swing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -752,6 +829,41 @@
           <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj2/MafiaForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj2/Wplata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="49" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj2/MafiaForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#598#606#0" expanded="true" />
           </folding>
         </state>
       </provider>
