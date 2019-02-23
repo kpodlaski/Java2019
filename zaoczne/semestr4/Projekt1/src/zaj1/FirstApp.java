@@ -7,11 +7,14 @@ public class FirstApp {
 
     public static void main(String[] args) {
         System.out.println("Nowy Program wystartował");
-        Car car = new Car();
-        car.brand="Toyota";
-        car.model="Avensis";
-        car.yearOfProduction = 2012;
-        System.out.println(car.brand + " "+ car.model
-                +" wyprodukowano w "+car.yearOfProduction);
+        Car car = new Car("Toyota","Avensis",2012);
+        //car.setBrand("Toyota");
+        //car.setModel("Avensis");
+        //car.setYearOfProduction(2012);
+        System.out.println(car.getBrand() + " "+ car.getModel()
+                +" wyprodukowano w "+car.getYearOfProduction());
+        System.out.println("__"+car);
+
+
     }
 }
