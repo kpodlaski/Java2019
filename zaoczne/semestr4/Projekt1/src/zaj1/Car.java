@@ -41,4 +41,9 @@ public class Car {
     public String toString() {
         return this.brand+" "+model+" rok:"+yearOfProduction;
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Niszczę obiekt");
+    }
 }

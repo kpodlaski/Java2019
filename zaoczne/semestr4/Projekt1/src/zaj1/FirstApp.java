@@ -15,6 +15,12 @@ public class FirstApp {
                 +" wyprodukowano w "+car.getYearOfProduction());
         System.out.println("__"+car);
 
+        /*
+        for(int i=0;true; i++){
+            car = new Car("Toyota","Avensis",2012);
+            car = null;
+        }
+        */
 
     }
 }
