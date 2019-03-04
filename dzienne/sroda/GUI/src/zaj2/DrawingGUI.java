@@ -33,7 +33,6 @@ public class DrawingGUI {
                 DrawingPanel p = (DrawingPanel) drawingPanel;
                 p.moveBallTo(e.getX(),e.getY());
                 p.repaint();
-
             }
         });
     }
