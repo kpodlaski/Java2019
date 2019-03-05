@@ -12,13 +12,19 @@ public class MyDrawingPanel extends JPanel {
     private int y = 70;
     @Override
     public void paint(Graphics g) {
-        super.paint(g);
+        //super.paint(g);
+
         g.setColor(Color.cyan);
-        g.fillOval(x,y,15,20);
+        g.fillOval(x-8,y-10,16,20);
     }
 
     public void moveBall(int dx, int dy){
         x+=dx;
         y+=dy;
+    }
+
+    public void moveBallTo(int x, int y) {
+        this.x=x;
+        this.y=y;
     }
 }
