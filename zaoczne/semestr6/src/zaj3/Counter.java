@@ -18,16 +18,19 @@ public class Counter implements Runnable{
         counter++;
     }
     public static void main(String[] args) throws InterruptedException {
-        Counter c1 = new Counter(1);
-        Counter c2 = new Counter(2);
-        Thread t1 = new Thread(c1);
-        Thread t2 = new Thread(c2);
-        t1.start();
-        t2.start();
-        t1.join();
-        t2.join();
+        Counter[] c = new Counter[100];
+        Thread[] t = new Thread[c.length];
+        for (int i=0; i<c.length; i++){
+            c[i] = new Counter(i);
+            t[i] = new Thread(c[i]);
+            t[i].start();
+            //t[i].join();
+        }
+        for (int i=0; i<c.length; i++){
+            t[i].join();
+        }
         System.out.println("Koniec programu");
-        System.out.println("ostatecnie dla w1 "+c1.counter);
-        System.out.println("ostatecnie dla w1 "+c2.counter);
+        System.out.println("ostatecnie dla w1 "+c[1].counter);
+        System.out.println("ostatecnie dla w2 "+c[2].counter);
     }
 }
