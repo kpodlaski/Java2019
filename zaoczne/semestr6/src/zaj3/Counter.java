@@ -11,7 +11,9 @@ public class Counter implements Runnable{
     public void run() {
         for (int i=0; i<100; i++){
             next();
-            if (i%10==0) System.out.println("w"+id+" "+counter);
+            if (counter%10==0) {
+                System.out.println("w" + id + " " + counter);
+            }
         }
     }
     /*rozwiwiązanie A
@@ -29,7 +31,7 @@ public class Counter implements Runnable{
 
     }
     public static void main(String[] args) throws InterruptedException {
-        Counter[] c = new Counter[500];
+        Counter[] c = new Counter[5000];
         Thread[] t = new Thread[c.length];
         for (int i=0; i<c.length; i++){
             c[i] = new Counter(i);
