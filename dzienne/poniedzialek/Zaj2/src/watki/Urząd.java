@@ -13,7 +13,9 @@ public class Urząd {
     synchronized Urzednik wolneOkienko(){
         if (okienka.size()==0) return null;
         Iterator<Urzednik> it = okienka.iterator();
-        return it.next();
+        Urzednik u = it.next();
+        it.remove();
+        return u;
     }
 
     synchronized void zwolnionoOkienko(Urzednik u){
