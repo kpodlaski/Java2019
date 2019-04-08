@@ -35,8 +35,10 @@ public class AnimationPanel extends JPanel{
         AnimationPanel aPanel = new AnimationPanel();
         frame.setContentPane(aPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        aPanel.setSize(600,600);
         frame.setSize(600,600);
-        frame.pack();
+
+        //frame.pack();
         frame.setVisible(true);
         aPanel.start();
     }
@@ -45,9 +47,16 @@ public class AnimationPanel extends JPanel{
 
         @Override
         public void run() {
-            moveBall();
-            checkBoundaries();
-            repaint();
+            while(true) {
+                moveBall();
+                checkBoundaries();
+                repaint();
+                try {
+                    Thread.sleep(30);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
         private void checkBoundaries() {
