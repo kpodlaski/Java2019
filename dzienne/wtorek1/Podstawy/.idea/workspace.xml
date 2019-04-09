@@ -9,7 +9,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sroda/GUI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../sroda/GUI/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sroda/GUI/src/zaj5/Counter.java" afterPath="$PROJECT_DIR$/../../sroda/GUI/src/zaj5/Counter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zaj6/Client.java" afterPath="$PROJECT_DIR$/src/zaj6/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zaj6/Officer.java" afterPath="$PROJECT_DIR$/src/zaj6/Officer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../wtorek2/ProjektJeden/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../wtorek2/ProjektJeden/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../zaoczne/semestr4/Projekt1/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../../zaoczne/semestr4/Projekt1/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../zaoczne/semestr4/Projekt1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../zaoczne/semestr4/Projekt1/.idea/workspace.xml" />
@@ -35,8 +35,8 @@
       <file leaf-file-name="PostOffice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zaj6/PostOffice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="340">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#504#505#0" expanded="true" />
@@ -46,24 +46,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Officer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Officer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zaj6/Officer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="-2">
+              <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
               <folding>
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zaj6/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding>
                 <element signature="e#788#789#0" expanded="true" />
                 <element signature="e#831#832#0" expanded="true" />
@@ -114,9 +114,9 @@
         <option value="$PROJECT_DIR$/src/zaj5/ReadUsingReader.java" />
         <option value="$PROJECT_DIR$/src/zaj5/ReadUsingStream.java" />
         <option value="$PROJECT_DIR$/src/zaj6/Counter.java" />
-        <option value="$PROJECT_DIR$/src/zaj6/Officer.java" />
         <option value="$PROJECT_DIR$/src/zaj6/PostOffice.java" />
         <option value="$PROJECT_DIR$/src/zaj6/Client.java" />
+        <option value="$PROJECT_DIR$/src/zaj6/Officer.java" />
       </list>
     </option>
   </component>
@@ -220,27 +220,7 @@
       <recent name="D:\Users\Krzysztof Podlaski\git\Java2019\dzienne\wtorek1\Podstawy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Counter">
-    <configuration default="false" name="Listy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zaj4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zaj4.Listy" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Podstawy" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Client">
     <configuration default="false" name="Zbiory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -309,6 +289,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="zaj6.Counter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Podstawy" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="zaj6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="zaj6.Client" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -702,19 +702,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Listy" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Zbiory" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Mapy" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ReadUsingStream" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Counter" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Zbiory" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Mapy" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ReadUsingStream" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Counter" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Counter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ReadUsingStream" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Mapy" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Zbiory" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Listy" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Client" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Counter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ReadUsingStream" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Mapy" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Zbiory" />
       </list>
     </recent_temporary>
   </component>
@@ -733,7 +733,7 @@
       <workItem from="1551777272321" duration="4190000" />
       <workItem from="1553591290121" duration="5153000" />
       <workItem from="1554192089349" duration="3036000" />
-      <workItem from="1554797426115" duration="4006000" />
+      <workItem from="1554797426115" duration="4304000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1550568023679</created>
@@ -805,11 +805,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554800875582</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="poczta cz2">
+      <created>1554801508202</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554801508202</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26361000" />
+    <option name="totallyTimeSpent" value="26659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="0" width="1296" height="767" extended-state="0" />
@@ -824,7 +831,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33173078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6233974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -863,7 +870,8 @@
     <MESSAGE value="strumienie" />
     <MESSAGE value="watki ex 1" />
     <MESSAGE value="poczta cz1" />
-    <option name="LAST_COMMIT_MESSAGE" value="poczta cz1" />
+    <MESSAGE value="poczta cz2" />
+    <option name="LAST_COMMIT_MESSAGE" value="poczta cz2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1117,21 +1125,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zaj6/Officer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zaj6/PostOffice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="340">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#504#505#0" expanded="true" />
@@ -1142,11 +1139,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zaj6/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="150">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#831#832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj6/Officer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
           </folding>
         </state>
       </provider>

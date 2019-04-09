@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class Officer {
     private char id;
-    private Random rand;
+    private Random rand = new Random();
     public Officer(char id){this.id=id;}
     public void serveClient(Client c){
         try {
