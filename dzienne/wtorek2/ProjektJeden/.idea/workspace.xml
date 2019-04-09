@@ -4,7 +4,9 @@
     <list default="true" id="b0a1c597-a726-4f64-b2a9-cb725b77e6a3" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../poniedzialek/Zaj1/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sroda/GUI/src/zaj5/Counter2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj6/Licznik.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj6/Klient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj6/Okienko.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj6/Poczta.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../zaoczne/semestr4/Projekt1/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../poniedzialek/Zaj2/src/animation/AnimationPanel.java" afterPath="$PROJECT_DIR$/../../poniedzialek/Zaj2/src/animation/AnimationPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sroda/GUI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../sroda/GUI/.idea/workspace.xml" />
@@ -31,39 +33,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StreamExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zaj5/StreamExample.java">
+      <file leaf-file-name="Okienko.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zaj6/Okienko.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1162">
-              <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="315">
+              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Poczta.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zaj6/Poczta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Licznik.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zaj6/Licznik.java">
+      <file leaf-file-name="Klient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zaj6/Klient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="188">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReaderExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zaj5/ReaderExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,6 +112,9 @@
         <option value="$PROJECT_DIR$/src/zaj5/StreamExample.java" />
         <option value="$PROJECT_DIR$/src/zaj5/ReaderExample.java" />
         <option value="$PROJECT_DIR$/src/zaj6/Licznik.java" />
+        <option value="$PROJECT_DIR$/src/zaj6/Okienko.java" />
+        <option value="$PROJECT_DIR$/src/zaj6/Poczta.java" />
+        <option value="$PROJECT_DIR$/src/zaj6/Klient.java" />
       </list>
     </option>
   </component>
@@ -206,14 +210,15 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="zaj3" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Krzysztof Podlaski\git\Java2019\dzienne\wtorek2\ProjektJeden\src\zaj3" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\Krzysztof Podlaski\git\Java2019\dzienne\wtorek2\ProjektJeden" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\Krzysztof Podlaski\git\Java2019\dzienne\wtorek2\ProjektJeden\src\zaj3" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="zaj6" />
+      <recent name="zaj3" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Licznik">
@@ -730,7 +735,7 @@
       <workItem from="1551782970729" duration="4212000" />
       <workItem from="1553597331202" duration="4901000" />
       <workItem from="1554198636524" duration="4725000" />
-      <workItem from="1554803694766" duration="1645000" />
+      <workItem from="1554803694766" duration="3349000" />
     </task>
     <task id="LOCAL-00001" summary="zajecia 1">
       <created>1550578001474</created>
@@ -760,11 +765,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554202214484</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="watki cz 1">
+      <created>1554805386943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554805386943</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24569000" />
+    <option name="totallyTimeSpent" value="26273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="43" width="1294" height="714" extended-state="0" />
@@ -813,7 +825,8 @@
     <MESSAGE value="zajecia 2" />
     <MESSAGE value="moving ball" />
     <MESSAGE value="Strumienie i readery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie i readery" />
+    <MESSAGE value="watki cz 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="watki cz 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1039,6 +1052,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj6/Licznik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zaj5/StreamExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1162">
@@ -1049,14 +1074,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zaj6/Licznik.java">
+    <entry file="file://$PROJECT_DIR$/src/zaj6/Okienko.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="315">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj6/Poczta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj6/Klient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
           </folding>
         </state>
       </provider>
