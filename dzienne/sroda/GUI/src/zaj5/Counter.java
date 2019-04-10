@@ -6,12 +6,15 @@ package zaj5;
 public class Counter implements Runnable {
 
     static int lastId =0;
-    public int x;
+    public static int x;
     private int id = lastId++;
+    private static String monitor = new String("Monitor");
 
-    private void next(){
-        x++;
-        x++;
+    private void  next(){
+        synchronized (monitor) {
+            x++;
+            x++;
+        }
     }
     @Override
     public void run() {
@@ -22,13 +25,17 @@ public class Counter implements Runnable {
         }
     }
 
-    public static void main(String[] args) {
-        Thread[] th = new Thread[20];
+    public static void main(String[] args) throws InterruptedException {
+        Thread[] th = new Thread[2000];
         for(int i=0; i<th.length; i++){
             th[i] = new Thread(new Counter());
         }
         for(Thread t : th){
             t.start();
         }
+        for(Thread t : th){
+            t.join();
+        }
+        System.out.println(x);
     }
 }
