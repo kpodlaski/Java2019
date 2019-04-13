@@ -18,7 +18,7 @@ public class ServerCommunicator extends Communicator {
         ServerSocket ssocket = new ServerSocket(port);
         Socket csocket = ssocket.accept();
         comBase = ComunicationBase.createInstance(csocket, uI);
+        uI.setCommBase(comBase);
         uI.messageReceived("Communication Started");
-
     }
 }

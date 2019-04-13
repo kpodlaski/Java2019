@@ -7,4 +7,8 @@ public interface UserIntefrace {
     void messageReceived(String text);
 
     void errorOccured(Exception e);
+
+    void sendMessage(String text);
+
+    void setCommBase(ComunicationBase comBase);
 }

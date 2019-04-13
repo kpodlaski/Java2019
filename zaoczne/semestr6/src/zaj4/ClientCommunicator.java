@@ -20,6 +20,7 @@ public class ClientCommunicator extends Communicator {
     public void initCommunicator(String host, int port) throws IOException {
         Socket socket = new Socket(host, port);
         comBase = ComunicationBase.createInstance(socket, uI);
+        uI.setCommBase(comBase);
         uI.messageReceived("Communication Started");
     }
 }
