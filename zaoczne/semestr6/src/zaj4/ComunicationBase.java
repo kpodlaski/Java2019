@@ -50,6 +50,7 @@ public class ComunicationBase {
         boolean endComunication = false;
         @Override
         public void run() {
+
             try {
                 BufferedReader buffReader = new BufferedReader(
                                             new InputStreamReader(is));
