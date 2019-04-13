@@ -4,8 +4,9 @@
     <list default="true" id="e9209905-635f-4ef4-869f-cf8c595049ca" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../dzienne/poniedzialek/Zaj1/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../semestr4/Projekt1/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj4/ComunicationBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj4/UserIntefrace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj4/ClientCommunicator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj4/Communicator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zaj4/ServerCommunicator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../dzienne/poniedzialek/Zaj2/src/animation/AnimationPanel.java" afterPath="$PROJECT_DIR$/../../dzienne/poniedzialek/Zaj2/src/animation/AnimationPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../dzienne/sroda/GUI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../dzienne/sroda/GUI/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../dzienne/sroda/GUI/src/zaj6/Client.java" afterPath="$PROJECT_DIR$/../../dzienne/sroda/GUI/src/zaj6/Client.java" />
@@ -15,8 +16,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../semestr4/Projekt1/.idea/misc.xml" afterPath="$PROJECT_DIR$/../semestr4/Projekt1/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../semestr4/Projekt1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../semestr4/Projekt1/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zaj3/Client.java" afterPath="$PROJECT_DIR$/src/zaj3/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zaj3/Offices.java" afterPath="$PROJECT_DIR$/src/zaj3/Offices.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,13 +31,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ComunicationBase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComunicationBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zaj4/ComunicationBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
               <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerCommunicator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zaj4/ServerCommunicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="20" column="52" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Communicator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zaj4/Communicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientCommunicator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zaj4/ClientCommunicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="674">
+              <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +96,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,6 +129,9 @@
         <option value="$PROJECT_DIR$/src/zaj3/Client.java" />
         <option value="$PROJECT_DIR$/src/zaj4/UserIntefrace.java" />
         <option value="$PROJECT_DIR$/src/zaj4/ComunicationBase.java" />
+        <option value="$PROJECT_DIR$/src/zaj4/Communicator.java" />
+        <option value="$PROJECT_DIR$/src/zaj4/ServerCommunicator.java" />
+        <option value="$PROJECT_DIR$/src/zaj4/ClientCommunicator.java" />
       </list>
     </option>
   </component>
@@ -166,54 +206,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zaj4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ComunicationBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semestr6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semestr6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zaj4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ComunicationBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InputStreamListener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semestr6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semestr6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -235,6 +227,9 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="zaj4" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="zaj4" />
     </key>
@@ -752,7 +747,7 @@
       <workItem from="1550915676053" duration="2194000" />
       <workItem from="1550917908854" duration="3370000" />
       <workItem from="1554627594785" duration="6389000" />
-      <workItem from="1555156557711" duration="1993000" />
+      <workItem from="1555156557711" duration="3337000" />
     </task>
     <task id="LOCAL-00001" summary="intro to GUI in swing">
       <created>1550917953547</created>
@@ -796,11 +791,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554633810244</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="communicationBase">
+      <created>1555158597868</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555158597868</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19041000" />
+    <option name="totallyTimeSpent" value="20385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1698" height="1018" extended-state="0" />
@@ -851,7 +853,8 @@
     <MESSAGE value="watki ver 2 - zupełnie niezależne 100 counterów" />
     <MESSAGE value="watki ver 3 - zsynchronizowane niezależne 100 counterów" />
     <MESSAGE value="obsługa klientow na poczcie" />
-    <option name="LAST_COMMIT_MESSAGE" value="obsługa klientow na poczcie" />
+    <MESSAGE value="communicationBase" />
+    <option name="LAST_COMMIT_MESSAGE" value="communicationBase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1006,6 +1009,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj4/ComunicationBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zaj4/UserIntefrace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1014,12 +1027,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zaj4/ComunicationBase.java">
+    <entry file="file://$PROJECT_DIR$/src/zaj4/Communicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="484">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj4/ServerCommunicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="20" column="52" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj4/ClientCommunicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
           </folding>
         </state>
       </provider>
