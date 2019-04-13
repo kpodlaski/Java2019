@@ -10,6 +10,12 @@ import java.io.InputStreamReader;
 public class ConsoleClientInterface implements UserIntefrace {
     ComunicationBase commBase;
 
+    public ConsoleClientInterface(){
+        Thread t = new Thread(new KeboardListener());
+        t.start();
+    }
+
+
     @Override
     public void messageReceived(String text) {
         System.out.println(text);

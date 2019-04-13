@@ -34,6 +34,8 @@ public class ComunicationBase {
     public void sendMessage(String message)
             throws UnsupportedEncodingException, IOException {
         os.write(message.getBytes("utf8"));
+        os.write('\n');
+        os.flush();
     }
 
     public void close(){

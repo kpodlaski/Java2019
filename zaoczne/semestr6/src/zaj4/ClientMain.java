@@ -11,6 +11,6 @@ public class ClientMain {
         ClientCommunicator clientCommunicator =
                 new ClientCommunicator(uI);
         clientCommunicator.initCommunicator(8000);
-
+        uI.sendMessage("TEST");
     }
 }
