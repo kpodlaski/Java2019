@@ -18,6 +18,7 @@ public class Client implements Runnable{
         while ( (officer = offices.getFreeOfficer())==null ){
             try {
                 Thread.sleep(3);
+                //System.out.println(this + " czeka");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
