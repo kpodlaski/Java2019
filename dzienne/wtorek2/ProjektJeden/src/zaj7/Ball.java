@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class Ball {
     private Image image;
-    private int x, y, r;
+    private int x, y, r, vx=2, vy=-1;
 
     public Ball(BufferedImage img, int x, int y, int r) {
         this.image = img;
@@ -31,5 +31,10 @@ public class Ball {
        ClassLoader.getSystemResourceAsStream(path)
         );
         return new Ball(img, x, y, r);
+    }
+
+    public void move() {
+        x+=vx;
+        y+=vy;
     }
 }
