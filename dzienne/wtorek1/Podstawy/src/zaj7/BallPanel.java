@@ -24,6 +24,7 @@ public class BallPanel extends JPanel {
     }
 
     private void checkColisions() {
+        ball.colisionsWithBorders(getWidth(),getHeight());
     }
 
     public void startAnimation(){

@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Ball {
     public Image image;
     public int x,y;
-    public int vx, vy;
+    public int vx=1, vy=2;
     public int size = 30;
 
     private Ball(BufferedImage img, int x, int y) {
@@ -30,5 +30,17 @@ public class Ball {
     }
 
     public void move() {
+        x+=vx;
+        y+=vy;
+    }
+
+    public void colisionsWithBorders(
+            int width, int height) {
+        if (x<=0  || x+size>=width){
+            vx=-vx;
+        }
+        if (y<=0  || y+size>=height){
+            vy=-vy;
+        }
     }
 }
