@@ -9,6 +9,7 @@ import java.io.IOException;
  */
 public class BallPanel extends JPanel {
     Ball ball;
+    Animation animation;
 
     public BallPanel(Ball ball){
         this.ball=ball;
@@ -22,6 +23,39 @@ public class BallPanel extends JPanel {
                 null);
     }
 
+    private void checkColisions() {
+    }
+
+    public void startAnimation(){
+        animation = new Animation();
+        Thread t = new Thread(animation);
+        t.start();
+    }
+
+    public void stopAnimation(){
+        animation.end_amination=true;
+    }
+    class Animation implements Runnable{
+
+        private boolean end_amination = false;
+
+        @Override
+        public void run() {
+            while(!end_amination){
+                ball.move();
+                checkColisions();
+                repaint();
+                try {
+                    Thread.sleep(30);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+
+
     public static void main(String[] args) throws IOException {
         Ball ball = Ball.create("zaj7/ball.png",20,20);
         BallPanel bPanel = new BallPanel(ball);
@@ -31,5 +65,6 @@ public class BallPanel extends JPanel {
         bPanel.setSize(550,550);
         frame.setSize(600,600);
         frame.setVisible(true);
+        bPanel.startAnimation();
     }
 }

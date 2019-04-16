@@ -28,4 +28,7 @@ public class Ball {
         return new Ball(img, x,y);
 
     }
+
+    public void move() {
+    }
 }
