@@ -37,4 +37,15 @@ public class Ball {
         x+=vx;
         y+=vy;
     }
+
+    public void checkColisionWithBorder
+            (int width, int height) {
+        if (y-r<=0 || y+r>=height){
+            vy=-vy;
+        }
+
+        if (x-r<=0 || x+r>=width ){
+            vx=-vx;
+        }
+    }
 }

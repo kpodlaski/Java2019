@@ -24,7 +24,12 @@ public class BallPanel extends JPanel {
     public void update(){
         ball.move();
     }
-    public void checkColisons(){}
+    public void checkColisons(){
+        ball.checkColisionWithBorder(
+                getWidth(), getHeight()
+        );
+    }
+
     public void startAnimation(){
         animation = new Animation();
         Thread t = new Thread(animation);
@@ -56,7 +61,7 @@ public class BallPanel extends JPanel {
 
     public static void main(String[] args) throws IOException {
         Ball ball = Ball.create(
-                "zaj7/ball.jpg",30,80,40);
+                "zaj7/ball.jpg",130,80,40);
         BallPanel bPanel = new BallPanel(ball);
         JFrame frame = new JFrame("Anmimacja");
         frame.setContentPane(bPanel);
