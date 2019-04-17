@@ -6,10 +6,12 @@ package zaj6;
 public class Client implements Runnable {
     private int id;
     private PostOffice post;
+    Thread thread;
 
     public Client(int i, PostOffice post) {
         this.id=i;
         this.post=post;
+        thread = new Thread(this);
     }
 
     @Override
@@ -19,8 +21,8 @@ public class Client implements Runnable {
         try {
             do {
                 //System.out.println("Klient "+id +" zerka na okienka");
-                c = post.reserveCounter();
-                Thread.sleep(5);
+                c = post.reserveCounter(this);
+                thread.wait();
             }
             while (c == null);
             c.serveClient(this);
@@ -36,11 +38,21 @@ public class Client implements Runnable {
         return Integer.toString(id);
     }
 
+    public void start() {
+        thread.start();
+    }
+
+
     public static void main(String[] args) {
         PostOffice post = new PostOffice();
         for (int i=0; i<15; i++){
-            Thread t = new Thread(new Client(i+1, post));
-            t.start();
+            Client c = new Client(i+1, post);
+            c.start();
         }
+    }
+
+
+    public void wakeUp() {
+        thread.notify();
     }
 }
