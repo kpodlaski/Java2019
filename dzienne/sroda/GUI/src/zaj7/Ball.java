@@ -28,7 +28,7 @@ public class Ball {
     }
 
     public void draw(Graphics g) {
-        g.drawImage(image,x+r,y+r,
+        g.drawImage(image,x-r,y-r,
                 2*r,2*r,
                 null);
     }
@@ -36,5 +36,15 @@ public class Ball {
     public void move() {
         x+=vx;
         y+=vy;
+    }
+
+    public void colissionWithBorders(
+            int width, int height) {
+        if (y-r<=0 || y+r>=height){
+            vy=-vy;
+        }
+        if (x-r<=0 || x+r>=width){
+            vx=-vx;
+        }
     }
 }

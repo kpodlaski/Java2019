@@ -23,7 +23,8 @@ public class BallPanel extends JPanel {
     }
 
     private void checkColissions() {
-        //TODO
+        ball.colissionWithBorders(
+                getWidth(),getHeight());
     }
 
     private void updateState() {
