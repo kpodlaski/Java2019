@@ -48,4 +48,7 @@ public class Ball {
             vx=-vx;
         }
     }
+
+    public void checkColisionWihBall(Ball ball2) {
+    }
 }
