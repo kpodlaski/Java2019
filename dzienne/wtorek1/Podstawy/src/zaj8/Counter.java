@@ -8,10 +8,9 @@ package zaj8;
 public abstract class Counter {
     public double total = 0.0;
 
-    abstract public void visit(Figure figure);
-
     abstract public void visit(Circle c);
     abstract public void visit (Rectangle r);
+    abstract public void visit(Triangle triangle);
 
     public static Counter createCounter(CounterTypes type) {
         switch (type){
@@ -21,6 +20,8 @@ public abstract class Counter {
         }
 
     }
+
+
 }
 
 enum CounterTypes{

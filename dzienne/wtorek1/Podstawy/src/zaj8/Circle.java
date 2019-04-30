@@ -14,6 +14,10 @@ public class Circle extends Figure {
         this.r=r;
     }
 
+    public void accept(Counter c) {
+        c.visit(this);
+    }
+
     @java.lang.Override
     public void draw(Graphics g) {
     }

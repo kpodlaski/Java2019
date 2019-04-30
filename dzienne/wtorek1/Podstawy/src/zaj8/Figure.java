@@ -7,9 +7,7 @@ import java.awt.*;
  */
 public abstract class Figure {
 
-    public void accept(Counter c) {
-        c.visit(this);
-    }
+    abstract public void accept(Counter c);
 
     abstract public void draw(Graphics g);
 }

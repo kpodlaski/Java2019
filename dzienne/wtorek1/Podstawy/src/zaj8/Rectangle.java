@@ -18,6 +18,10 @@ public class Rectangle extends Figure {
         this.h = h;
     }
 
+    public void accept(Counter c) {
+        c.visit(this);
+    }
+
     @java.lang.Override
     public void draw(Graphics g) {
 

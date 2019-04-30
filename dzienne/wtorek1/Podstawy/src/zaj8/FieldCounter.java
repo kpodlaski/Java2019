@@ -5,10 +5,6 @@ package zaj8;
  */
 public class FieldCounter extends Counter {
 
-    @Override
-    public void visit(Figure figure) {
-        new RuntimeException("Zbyt abstakcyjnu obiekt aby go odwiedzić");
-    }
 
     @Override
     public void visit(Circle c) {
