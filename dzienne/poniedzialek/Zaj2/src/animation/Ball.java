@@ -6,7 +6,7 @@ import java.awt.*;
  * Created by Krzysztof Podlaski on 06.05.2019.
  */
 public class Ball {
-    double x, y, vx, vy, r=5;
+    double x, y, vx, vy, r=10;
     Color color =Color.blue;
 
     public Ball(double x, double y, double vx, double vy) {
@@ -38,6 +38,27 @@ public class Ball {
 
     public void checkColisionWith(Ball b) {
         //Check if balls collide
-        //if collide then change velocities of this and b
+        double r2 = distance2ToBall(b);
+        if (r2 <= Math.pow(r+b.r,2)){
+            //if collide then change velocities of this and b
+            //0 approach
+
+        }
+
+    }
+
+    private double distance2ToBall(Ball b) {
+        return Math.pow(x-b.x,2)+Math.pow(y-b.y,2);
+    }
+
+    public void drawInfo(Graphics g) {
+        g.setColor(color);
+        g.drawString("["+vx+","+vy+"]",200,20);
+    }
+
+    public void increaseV(double dvx, double dvy)
+    {
+        vx+=dvx;
+        vy+=dvy;
     }
 }
