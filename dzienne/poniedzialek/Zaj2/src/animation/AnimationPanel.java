@@ -2,27 +2,35 @@ package animation;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Krzysztof Podlaski on 08.04.2019.
  */
 public class AnimationPanel extends JPanel{
-    private double x, y, vx, vy;
+    //private double x, y, vx, vy;
+    private List<Ball> balls = new ArrayList<>();
     private Animation animation;
 
     public AnimationPanel(){
-        x=100;
-        y=100;
-        vx=2;
-        vy=-2;
+        Ball b = new Ball(100, 100, 2, -2);
+        balls.add(b);
+        b = new Ball(18, 22, 2, 2);
+        balls.add(b);
+        //x=100;
+        //y=100;
+        //vx=2;
+        //vy=-2;
         animation = new Animation();
     }
 
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        g.setColor(Color.blue);
-        g.drawOval((int) x-5, (int) y-5,10,10);
+        for(Ball b : balls){
+            b.drawBall(g);
+        }
     }
 
     public void start(){
@@ -50,9 +58,10 @@ public class AnimationPanel extends JPanel{
             while(true) {
                 moveBall();
                 checkBoundaries();
+                checkBallCollisions();
                 repaint();
                 try {
-                    Thread.sleep(30);
+                    Thread.sleep(20);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -60,17 +69,25 @@ public class AnimationPanel extends JPanel{
         }
 
         private void checkBoundaries() {
-            if ( x-5<=0 || x+5>=getWidth()){
-                vx=-vx;
-            }
-            if ( y-5<=0 || y+5>=getHeight()){
-                vy=-vy;
+            for(Ball b : balls){
+                b.checkBoundaries(getWidth(), getHeight());
             }
         }
 
         private void moveBall() {
-            x+=vx;
-            y+=vy;
+            for(Ball b : balls){
+                b.moveBall();
+            }
+        }
+    }
+
+    private void checkBallCollisions() {
+        for (int i =0; i< balls.size(); i++){
+            for (int j = i+1; j< balls.size(); j++){
+                Ball bI = balls.get(i);
+                Ball bJ = balls.get(j);
+                bI.checkColisionWith(bJ);
+            }
         }
     }
 }
