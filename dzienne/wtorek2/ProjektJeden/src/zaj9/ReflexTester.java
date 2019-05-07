@@ -6,6 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Krzysztof Podlaski on 07.05.2019.
@@ -13,6 +17,12 @@ import java.util.List;
 public class ReflexTester extends JPanel{
     List<JButton> buttons = new ArrayList<>();
     int rows, cols;
+    private long startTime;
+    private Random rand = new Random();
+    ScheduledExecutorService executor =
+            Executors.newSingleThreadScheduledExecutor();
+    ReflexSwitcherWithoutSleep task =new ReflexSwitcherWithoutSleep();
+
 
     public ReflexTester(int rows, int cols) {
         this.rows=rows;
@@ -32,18 +42,27 @@ public class ReflexTester extends JPanel{
 
     private void switchOn(int row, int column) {
         int index = (row-1)*cols+column-1;
-        JButton b = buttons.get(index);
-        b.setText("ON");
+        switchOn(index);
     }
 
-    private void switchOFF(int row, int column) {
+    private void switchOn(int index){
+        JButton b = buttons.get(index);
+        b.setText("ON");
+        startTime = System.currentTimeMillis();
+    }
+
+    private void switchOff(int row, int column) {
         int index = (row-1)*cols+column-1;
         JButton b = buttons.get(index);
         b.setText(""+row+column);
+        long stopTime= System.currentTimeMillis();
+        System.out.println(1.0*(stopTime-startTime)/1000+"s");
+        startTime = 0;
+        //Uruchom wątek zaplający następny klawisz
+        //new Thread(new ReflexSwitcherWithSleep()).start();
+        executor.schedule(task,
+                rand.nextInt(3000), TimeUnit.MILLISECONDS);
     }
-
-
-
 
 
     private static ReflexTester createPanel(int rows, int cols) {
@@ -65,18 +84,42 @@ public class ReflexTester extends JPanel{
         @Override
         public void actionPerformed(ActionEvent e) {
             JButton b = (JButton) e.getSource();
+            int index;
+            for (index = 0; index<buttons.size(); index++){
+                if(buttons.get(index)==b) break;
+            }
+            int row = index/cols + 1;
+            int col = index%cols +1;
             if (b.getText().equals("ON")){
-                int index;
-                for (index = 0; index<buttons.size(); index++){
-                    if(buttons.get(index)==b) break;
-                }
-                int row = index/cols + 1;
-                int col = index%cols +1;
-                switchOFF(row,col);
+
+                switchOff(row,col);
             }
+            /*
             else {
-                b.setText("ON");
+                switchOn(row,col);
             }
+            */
+        }
+    }
+
+    private class ReflexSwitcherWithSleep implements Runnable{
+        @Override
+        public void run() {
+            int index = rand.nextInt(buttons.size());
+            try {
+                Thread.sleep(rand.nextInt(3000)); //Max 3 s
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            switchOn(index);
+        }
+    }
+
+    private class ReflexSwitcherWithoutSleep implements Runnable{
+        @Override
+        public void run() {
+            int index = rand.nextInt(buttons.size());
+            switchOn(index);
         }
     }
 }
