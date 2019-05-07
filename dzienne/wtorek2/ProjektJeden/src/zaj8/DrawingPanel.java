@@ -2,6 +2,7 @@ package zaj8;
 
 import zaj8.figures.Circle;
 import zaj8.figures.Rectangle;
+import zaj8.figures.Triangle;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,6 +35,10 @@ public class DrawingPanel extends JPanel {
         dp.figures.add(new Circle(234,132,15));
         dp.figures.add(new Circle(14,75,21));
         dp.figures.add(new Rectangle(33,271,12,15));
+        dp.figures.add(new Triangle(
+                22,25,
+                32,25,
+                12,12));
         //TODO Drawimg and GUI
         double f = dp.mesaure(MeasurerType.FieldMeasurer);
         System.out.println(f);

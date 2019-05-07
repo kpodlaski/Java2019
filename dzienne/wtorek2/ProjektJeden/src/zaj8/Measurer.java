@@ -2,6 +2,7 @@ package zaj8;
 
 import zaj8.figures.Circle;
 import zaj8.figures.Rectangle;
+import zaj8.figures.Triangle;
 import zaj8.measurers.FieldMeasurer;
 import zaj8.measurers.PerimeterMeasurer;
 
@@ -23,6 +24,8 @@ public abstract class Measurer {
     public abstract void visit(Circle circle);
 
     public abstract void visit(Rectangle rectangle);
+
+    public abstract void visit(Triangle triangle);
 }
 
 enum MeasurerType{
