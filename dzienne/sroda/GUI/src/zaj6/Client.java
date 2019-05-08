@@ -53,6 +53,6 @@ public class Client implements Runnable {
 
 
     public void wakeUp() {
-        thread.notify();
+        thread.notifyAll();
     }
 }

@@ -47,4 +47,20 @@ public class Ball {
             vx=-vx;
         }
     }
+
+    public void colissionWithBall(Ball ball) {
+        double d2 = Math.pow(x-ball.x,2);
+        d2+=Math.pow(y-ball.y,2);
+        if (d2<=Math.pow(r+ball.r,2)){
+            if (Math.signum(vx)==-Math.signum(ball.vx)){
+                vx=-vx;
+                ball.vx=-ball.vx;
+            }
+            if (Math.signum(vy)==-Math.signum(ball.vy)) {
+                vy = -vy;
+                ball.vy = -ball.vy;
+            }
+        }
+
+    }
 }

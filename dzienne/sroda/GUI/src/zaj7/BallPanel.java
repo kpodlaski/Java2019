@@ -8,10 +8,10 @@ import java.io.IOException;
  * Created by Krzysztof Podlaski on 17.04.2019.
  */
 public class BallPanel extends JPanel {
-    Ball ball;
+    Ball[] ball;
     Animation animation;
 
-    public BallPanel(Ball ball) {
+    public BallPanel(Ball ... ball) {
         this.ball=ball;
         this.animation = new Animation();
     }
@@ -19,16 +19,22 @@ public class BallPanel extends JPanel {
     @Override
     public void paint(Graphics g){
         super.paint(g);
-        ball.draw(g);
+        for (Ball b : ball)
+            b.draw(g);
     }
 
     private void checkColissions() {
-        ball.colissionWithBorders(
-                getWidth(),getHeight());
+        for( int i=0; i<ball.length; i++){
+            ball[i].colissionWithBorders(getWidth(), getHeight());
+            for (int j=i+1; j<ball.length; j++){
+                ball[i].colissionWithBall(ball[j]);
+            }
+        }
     }
 
     private void updateState() {
-        ball.move();
+        for (Ball b : ball)
+            b.move();
     }
 
     public void startAnimation(){
@@ -64,7 +70,9 @@ public class BallPanel extends JPanel {
     public static void main(String[] args) throws IOException {
         Ball ball = Ball.create("zaj7/8ball.gif",
                 50,50,20);
-        BallPanel bPanel = new BallPanel(ball);
+        Ball ball2 = Ball.create("zaj7/8ball.gif",
+                150,250,20);
+        BallPanel bPanel = new BallPanel(ball,ball2);
         JFrame frame = new JFrame("Kulki");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(bPanel);
