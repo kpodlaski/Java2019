@@ -6,6 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Krzysztof Podlaski on 08.05.2019.
@@ -14,6 +18,11 @@ public class ReflexTester extends JPanel {
 
     List<JButton> buttons = new ArrayList<>();
     int rows, cols;
+    private long startTime;
+    Random rand = new Random();
+    ScheduledExecutorService executor =
+            Executors.newSingleThreadScheduledExecutor();
+    ReflexWaiter2 task =new ReflexWaiter2();
 
     public ReflexTester(int rows, int cols) {
         this.rows = rows;
@@ -34,6 +43,13 @@ public class ReflexTester extends JPanel {
     private void switchOn(int r, int c) {
         buttons.get(r*cols+c).setText("ON");
         //Pomiar czasu
+        startTime = System.currentTimeMillis();
+        //Date d = new Date();
+        //startTime = d.getTime();
+    }
+
+    private void switchOff(int r, int c){
+
     }
 
     private static ReflexTester create(int rows, int cols) {
@@ -57,6 +73,8 @@ public class ReflexTester extends JPanel {
         public void actionPerformed(ActionEvent e) {
             JButton b = (JButton) e.getSource();
             if(b.getText().equals("ON")){
+                long endTime = System.currentTimeMillis();
+                System.out.println( 1.0*(endTime-startTime)/1000+"s");
                 int index;
                 for(index=0; index<buttons.size(); index++){
                     if (buttons.get(index)==b) break;
@@ -64,10 +82,37 @@ public class ReflexTester extends JPanel {
                 int r = index/cols +1;
                 int c = index%cols +1;
                 b.setText(""+r+c);
+
+                //new Thread(new ReflexWaiter()).start();
+                executor.schedule(task, rand.nextInt(3000), TimeUnit.MILLISECONDS);
+
+
             }
-            else {
-                b.setText("ON");
+//            else {
+//                b.setText("ON");
+//                startTime=0;
+//            }
+
+        }
+    }
+
+    private class ReflexWaiter implements Runnable {
+        @Override
+        public void run() {
+            try {
+                Thread.sleep(rand.nextInt(5000));
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
             }
+            switchOn(rand.nextInt(rows),rand.nextInt(cols));
+        }
+    }
+
+    private class ReflexWaiter2 implements Runnable {
+        @Override
+        public void run() {
+
+            switchOn(rand.nextInt(rows),rand.nextInt(cols));
         }
     }
 }
