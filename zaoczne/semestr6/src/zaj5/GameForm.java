@@ -22,6 +22,12 @@ public class GameForm {
                 DrawingPanel dp =(DrawingPanel) drawingPanel;
                 dp.moveBall(0,-5);
                 dp.repaint();
+                //Aplikacja z paskudnym UI
+//                try {
+//                    Thread.sleep(4000);
+//                } catch (InterruptedException e1) {
+//                    e1.printStackTrace();
+//                }
             }
         });
     }

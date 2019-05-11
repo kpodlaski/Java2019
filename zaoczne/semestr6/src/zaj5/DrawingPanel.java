@@ -21,7 +21,7 @@ public class DrawingPanel extends javax.swing.JPanel {
         g.setColor(Color.CYAN);
         g.fillOval(60,45,18,10);
         if (ballImage==null) loadImage();
-        g.drawImage(ballImage,x,y,48,48,null);
+        else g.drawImage(ballImage,x,y,48,48,null);
     }
 
     public void moveBall(int dx, int dy) {
@@ -30,15 +30,38 @@ public class DrawingPanel extends javax.swing.JPanel {
     }
 
     private void loadImage() {
-        try {
-            ballImage = ImageIO.read(
-              ClassLoader.getSystemResourceAsStream("zaj5/bilardBall.jpg")
-              //new FileInputStream("c:\\.......")
-            );
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Runnable task  = new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    ballImage = ImageIO.read(
+                            ClassLoader.getSystemResourceAsStream("zaj5/bilardBall.jpg")
+                            //new FileInputStream("c:\\.......")
+                    );
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                repaint();
+                new Thread(new Animation()).start();
+            }
+        };
+        new Thread(task).start();
+
     }
 
+    class Animation implements Runnable{
 
+        @Override
+        public void run() {
+            while(true){
+                moveBall(1,-2);
+                repaint();
+                try {
+                    Thread.sleep(30);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }
