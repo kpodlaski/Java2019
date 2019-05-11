@@ -35,13 +35,13 @@ public class ComunicationBase {
             throws UnsupportedEncodingException, IOException {
         os.write(message.getBytes("utf8"));
         os.write('\n');
-        os.flush();
     }
 
     public void close(){
         try {
             os.close();
             is.close();
+            socket.close();
         } catch (IOException e) {
             uI.errorOccured(e);
             e.printStackTrace();
@@ -52,7 +52,6 @@ public class ComunicationBase {
         boolean endComunication = false;
         @Override
         public void run() {
-
             try {
                 BufferedReader buffReader = new BufferedReader(
                                             new InputStreamReader(is));
@@ -63,13 +62,17 @@ public class ComunicationBase {
                         break;
                     }
                     uI.messageReceived(text);
+                    if (text.trim().equals("[STOP]")){
+                        endComunication = true;
+                    }
                 }
             }
             catch(IOException e){
                 uI.errorOccured(e);
             }
             finally {
-                close();
+                uI.messageReceived("ZAMYKAMY");
+                uI.close();
             }
         }
     }

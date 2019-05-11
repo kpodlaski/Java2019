@@ -9,10 +9,11 @@ import java.io.InputStreamReader;
  */
 public class ConsoleClientInterface implements UserIntefrace {
     ComunicationBase commBase;
-
     public ConsoleClientInterface(){
         Thread t = new Thread(new KeboardListener());
+        t.setDaemon(true);
         t.start();
+
     }
 
 
@@ -41,6 +42,12 @@ public class ConsoleClientInterface implements UserIntefrace {
        this.commBase = comBase;
     }
 
+    @Override
+    public void close() {
+        commBase.close();
+
+    }
+
 
     class KeboardListener implements Runnable{
 
@@ -57,7 +64,17 @@ public class ConsoleClientInterface implements UserIntefrace {
                     e.printStackTrace();
                 }
                 sendMessage(text);
+                if (text.trim().equals("[STOP]")){
+                    try {
+                        Thread.sleep(30);
+                        break;
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
             }
+            close();
         }
     }
 

@@ -11,4 +11,6 @@ public interface UserIntefrace {
     void sendMessage(String text);
 
     void setCommBase(ComunicationBase comBase);
+
+    void close();
 }
