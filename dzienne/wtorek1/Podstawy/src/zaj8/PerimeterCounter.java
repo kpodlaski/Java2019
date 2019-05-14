@@ -17,4 +17,9 @@ public class PerimeterCounter extends Counter {
         double o = 2*(r.w+r.h);
         total +=o;
     }
+
+    @Override
+    public void visit(Triangle triangle) {
+
+    }
 }

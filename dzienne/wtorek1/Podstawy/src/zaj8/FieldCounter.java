@@ -17,4 +17,9 @@ public class FieldCounter extends Counter {
         double f = r.w*r.h;
         total+=f;
     }
+
+    @Override
+    public void visit(Triangle triangle) {
+
+    }
 }
