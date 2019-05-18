@@ -30,15 +30,22 @@ public class Post {
         System.out.println("Wolni urzędnicy "+freeClerks.size());
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Post post = new Post();
         post.freeClerks.add(new PostClerk('A'));
         post.freeClerks.add(new PostClerk('B'));
         post.freeClerks.add(new PostClerk('C'));
+        Thread[] watkiKlientow = new Thread[20];
         for(int i=1; i<=20; i++){
             Thread t = new Thread(new PostClient(i,post));
             t.start();
+            watkiKlientow[i-1]=t;
+            //t.join(); //Nie ponieważ mamy tak naprawdę jeden wątek
         }
+        for (Thread t: watkiKlientow) {
+            t.join();
+        }
+        System.out.println("Brak klientów Poczta się zamyka");
 
     }
 }
