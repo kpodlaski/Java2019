@@ -20,14 +20,37 @@ public class GameForm {
             @Override
             public void actionPerformed(ActionEvent e) {
                 DrawingPanel dp =(DrawingPanel) drawingPanel;
-                dp.moveBall(0,-5);
-                dp.repaint();
+                dp.accelerateBall(0,-2);
                 //Aplikacja z paskudnym UI
 //                try {
 //                    Thread.sleep(4000);
 //                } catch (InterruptedException e1) {
 //                    e1.printStackTrace();
 //                }
+            }
+        });
+
+        dButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DrawingPanel dp =(DrawingPanel) drawingPanel;
+                dp.accelerateBall(0,2);
+            }
+        });
+
+        lButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DrawingPanel dp =(DrawingPanel) drawingPanel;
+                dp.accelerateBall(-2,0);
+            }
+        });
+
+        rButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DrawingPanel dp =(DrawingPanel) drawingPanel;
+                dp.accelerateBall(2,0);
             }
         });
     }
