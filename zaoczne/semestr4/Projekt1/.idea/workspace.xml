@@ -19,7 +19,6 @@
       <change afterPath="$PROJECT_DIR$/../../../dzienne/wtorek2/ProjektJeden/src/zaj10/background.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../dzienne/wtorek2/ProjektJeden/src/zaj10/fxml_example.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../dzienne/wtorek2/ProjektJeden/src/zaj10/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zaj4/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../dzienne/poniedzialek/Zaj2/src/animation/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dzienne/poniedzialek/Zaj2/src/animation/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../dzienne/sroda/GUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dzienne/sroda/GUI/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../dzienne/sroda/GUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dzienne/sroda/GUI/.idea/workspace.xml" afterDir="false" />
@@ -28,7 +27,8 @@
       <change beforePath="$PROJECT_DIR$/../../../dzienne/wtorek1/Podstawy/src/zaj10/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dzienne/wtorek1/Podstawy/src/zaj10/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../dzienne/wtorek2/ProjektJeden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dzienne/wtorek2/ProjektJeden/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zaj4/PostClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zaj4/PostClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zaj4/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zaj4/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zaj4/PostClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zaj4/PostClerk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../semestr6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../semestr6/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,26 +71,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zaj4/PostClerk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zaj4/PostClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="196">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <folding>
+                <element signature="e#142#143#0" expanded="true" />
+                <element signature="e#164#165#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zaj4/PostClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zaj4/Post.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/zaj3/BallGame.java" />
         <option value="$PROJECT_DIR$/src/zaj3/DrawingPanel.java" />
         <option value="$PROJECT_DIR$/src/zaj4/Counter.java" />
-        <option value="$PROJECT_DIR$/src/zaj4/PostClerk.java" />
         <option value="$PROJECT_DIR$/src/zaj4/PostClient.java" />
+        <option value="$PROJECT_DIR$/src/zaj4/PostClerk.java" />
         <option value="$PROJECT_DIR$/src/zaj4/Post.java" />
       </list>
     </option>
@@ -414,7 +421,7 @@
       <workItem from="1550927353816" duration="5780000" />
       <workItem from="1553940028783" duration="5679000" />
       <workItem from="1557559581030" duration="3355000" />
-      <workItem from="1558180020600" duration="3013000" />
+      <workItem from="1558180020600" duration="3841000" />
     </task>
     <task id="LOCAL-00001" summary="zajecia 23.02">
       <created>1550928435070</created>
@@ -465,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558182712297</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="post v2">
+      <created>1558183060857</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558183060857</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17827000" />
+    <option name="totallyTimeSpent" value="18655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1359" height="815" extended-state="0" />
@@ -522,7 +536,8 @@
     <MESSAGE value="ball animation ver 1" />
     <MESSAGE value="watki v1" />
     <MESSAGE value="post v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="post v1" />
+    <MESSAGE value="post v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="post v2" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -603,22 +618,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zaj4/PostClerk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zaj4/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="196">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zaj4/PostClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="308">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zaj4/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

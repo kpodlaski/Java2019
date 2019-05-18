@@ -7,6 +7,10 @@ public class PostClerk {
     char id;
     Random rand = new Random();
 
+    public PostClerk(char a) {
+        id = a;
+    }
+
     public void serve(PostClient client){
         System.out.println("Urzędnik "+id +" obsługuje klienta "+client.id);
         //To klient miał zadanie robimy
