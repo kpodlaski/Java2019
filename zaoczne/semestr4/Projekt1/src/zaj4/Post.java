@@ -10,14 +10,24 @@ public class Post {
     public void serve(PostClient client){
         PostClerk clerk = null;
         while(true){
-            if (freeClerks.size()>0) {
-                clerk = freeClerks.get(0);
-                freeClerks.remove(0);
-                break;
+            synchronized(this) {
+                if (freeClerks.size() > 0) {
+                    clerk = freeClerks.get(0);
+                    freeClerks.remove(0);
+                    break;
+                }
             }
+
+            try {
+                Thread.sleep(5);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
         clerk.serve(client);
         freeClerks.add(clerk);
+        System.out.println("Wolni urzędnicy "+freeClerks.size());
     }
 
     public static void main(String[] args) {
