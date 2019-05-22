@@ -4,6 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -48,6 +50,34 @@ public class EquationSolverTest {
         assertEquals(2,res.size());
         assertEquals(-4,res.get(0),0.001);
         assertEquals(4,res.get(1),0.001);
+    }
+
+    @Test
+    public void quadraticEquation3() {
+        double a=1, b=1, c=1, y=0;
+        List<Double> res = eqS.quadraticEquation(a,b,c,y);
+        assertEquals(0,res.size());
+    }
+
+    @Test
+    public void quadraticEquation4() {
+        double a=1, b=2, c=3, y=2;
+        List<Double> res = eqS.quadraticEquation(a,b,c,y);
+        assertEquals(1,res.size());
+        assertEquals(-1,res.get(0),0.001);
+    }
+
+    @Test
+    public void matrixDeterminant2D() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        double[][] m = new double[][]{{1,2},{3,1}};
+        Method method = eqS.getClass().getDeclaredMethod(
+                "matrixDeterminant2D",
+                m.getClass());
+        System.out.println(method);
+        method.setAccessible(true);
+        Double d= (Double) method.invoke(eqS,(Object) m);
+         //eqS.matrixDeterminant2D(m);
+        assertEquals(-5,d.doubleValue(),0.001);
     }
 
 }
