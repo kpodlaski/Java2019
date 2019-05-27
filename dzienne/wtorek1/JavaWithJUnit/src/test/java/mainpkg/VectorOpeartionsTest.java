@@ -32,7 +32,7 @@ class VectorOpeartionsTest {
     void vectorCrossMultiplicationBadDimension() throws Exception{
         double[] v = new double[] {1,0};
         double[] w = new double[] {0,1};
-        assertThrows(Exception.class, () -> {vO.vectorCrossMultiplication(v,w);});
+        assertThrows(Exception.class, () -> {vO.crossVectorMultiplication(v,w);});
     }
 
     @Test
@@ -41,7 +41,7 @@ class VectorOpeartionsTest {
         double[] v = new double[] {1,0};
         double[] w = new double[] {0,1};
         double[] expected = new double[] {0,0,1};
-        double[] result = vO.vectorCrossMultiplication(v,w);
+        double[] result = vO.crossVectorMultiplication(v,w);
         assertArrayEquals(expected,result,0.01);
     }
 }

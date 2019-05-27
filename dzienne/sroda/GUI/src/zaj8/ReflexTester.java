@@ -107,11 +107,9 @@ public class ReflexTester extends JPanel {
             switchOn(rand.nextInt(rows),rand.nextInt(cols));
         }
     }
-
     private class ReflexWaiter2 implements Runnable {
         @Override
         public void run() {
-
             switchOn(rand.nextInt(rows),rand.nextInt(cols));
         }
     }

@@ -14,7 +14,7 @@ public class VectorOpeartions {
         return result;
     }
 
-    public double[] vectorCrossMultiplication(double[] v1, double[] v2) throws Exception {
+    public double[] crossVectorMultiplication(double[] v1, double[] v2) throws Exception {
         if (dim<3) throw new Exception("Cannot operate on diminesion smaller than 3");
         double[] res = new double[dim];
         if (v1.length<3 || v2.length<3){
@@ -28,4 +28,33 @@ public class VectorOpeartions {
         res[2] = v1[0]*v2[1]-v1[1]*v2[0];
         return res;
     }
+
+    public double scalarVectorMultiplication(double[] v, double[] w){
+        double r = 0.0;
+        for(int i=0; i<v.length && i<w.length; i++){
+            r+=v[i]*w[i];
+        }
+        return r;
+    }
+
+    public double[] vectorScalarMultiplication(double[] v, double a){
+        double[] d = new double[dim];
+        for (int i=0; i<d.length; i++){
+            d[i]=v[i]*a;
+        }
+        return d;
+    }
+
+    public double[] sumOfVectors(double[] v, double[] w){
+        double[] d = new double[dim];
+        for (int i=0; i<d.length; i++){
+            d[i]=v[i]+w[i];
+        }
+        return d;
+    }
+
+    public double[] differenceOfVectors(double[] v, double[] w){
+        return sumOfVectors(v, vectorScalarMultiplication(w,-1));
+    }
+
 }

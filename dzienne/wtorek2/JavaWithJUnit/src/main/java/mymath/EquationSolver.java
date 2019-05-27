@@ -15,6 +15,14 @@ public class EquationSolver {
 
     public List<Double> solveQuadraticEquation
             (double a, double b, double c, double y){
-        return new ArrayList<Double>();
+        List<Double> results = ArrayList<Double>();
+        if (a==0)
+            return results;
+        double delta = b*b-4*a*c;
+        if (delta<0)
+            return results;
+        //if (Double.compare())
     }
+
+
 }

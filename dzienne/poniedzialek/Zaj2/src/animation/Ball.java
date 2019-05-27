@@ -42,7 +42,25 @@ public class Ball {
         if (r2 <= Math.pow(r+b.r,2)){
             //if collide then change velocities of this and b
             //0 approach
-
+            if (Math.signum(vx)==-Math.signum(b.vx))
+            {
+                vx=-vx;
+                b.vx=-b.vx;
+            }
+            else{
+                double v =b.vx;
+                b.vx=vx;
+                vx=v;
+            }
+            if (Math.signum(vy) == -Math.signum(b.vy)) {
+                vy=-vy;
+                b.vy=-b.vy;
+            }
+            else{
+                double v = b.vy;
+                b.vy=vy;
+                vy=v;
+            }
         }
 
     }
